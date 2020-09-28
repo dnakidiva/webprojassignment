@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/index.css" rel="stylesheet">
+
+    <title>Class Assignment!</title>
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <!-- The image half   -->
+            <div class="col-md-6 d-none d-md-flex bg-image"></div>
+    
+    
+            <!-- The content half -->
+            <div class="col-md-6 bg-light">
+                <div class="login d-flex align-items-center py-5">
+    
+                    <div class="container">
+                        <div class="col-12 htitle"><h3 class="display-4">Signup To Strathmore Hotels</h3></div>
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-7 mx-auto">
+                                
+                                <p class="text-muted mb-4">SignUp To Access Hotel Amenities</p>
+
+                               <form id="fromsignup">
+                                    <div class="form-icon">
+                                        <span><i class="icon icon-user"></i></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control item" name="inputusername" id="inputusername" placeholder="Full Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control item"name="inputemail" id="inputemail" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control item" name="" id="password" placeholder="Password">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <input type="text" class="form-control item" name="inputcity" id="inputcity" placeholder="City of Residence">
+                                    </div>
+                                   
+                                    <div class="form-group">
+                                        <button type="submit" id="signupbtn"class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign Up</button>
+                                    </div>
+
+                                    <input type = "hidden" name = "hdnemail" id = "hdnemail" value="">
+                                    <input type = "hidden" name = "hdnpassword" id = "hdnpassword" value="">
+                                    <input type = "hidden" name = "hdnusername" id = "hdnusername" value="">
+                                    <input type = "hidden" name = "hdncity" id = "hdncity" value="">
+
+
+
+
+
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div><!-- End -->
+    
+                </div>
+            </div><!-- End -->
+    
+        </div>
+    </div>
+    
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script>
+        /*varribales to send to the next page*/$
+
+        var email = $("#inputEmail").val();
+        var password = $("#inputPassword").val();
+        var city = $("#inputemail").val();
+        var username = $("#inputPassword").val();
+
+
+        $('#hdnemail').val(email);
+        $('#hdnpassword').val(password);
+        $('#hdnusername').val(username);
+        $('#hdncity').val(city);
+
+
+
+
+        $( "#signupbtn" ).click(function() {
+
+            $('#fromsignup').attr('action', 'profilepage.html'); $( "#fromsignup" ).submit();
+
+        });
+
+
+       /* $( "#btnsignup" ).click(function() {
+
+            $('#loginform').attr('action', 'signup.html'); $( "#loginform" ).submit();
+
+        });*/
+
+
+
+
+
+
+    </script>
+
+
+
+
+  </body>
+</html>

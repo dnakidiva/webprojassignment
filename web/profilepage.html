@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/index.css" rel="stylesheet">
+
+    <title>Class Assignment!</title>
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <!-- The image half   -->
+            <div class="col-8 mx-auto">
+              <div class="prfhdr">
+                <h3 style="text-align: center;">Welcome To The Strathmore Hotels, Here is Your Profile</h3>
+              </div>
+
+
+              <div class="card">
+                <img src="image/avatar.jpeg" alt="John"  style="width:100%; height: 50%;">
+                <h1 id="name">Davies Akidiva</h1>
+                <p id="title">Software Engineer</p>
+                <p id="email">dnakidiva@gmail.com</p>
+                <p id="passwrord">1234</p>
+               <button>Change Password</button>
+               <button id="lgtbtn"style="margin: 5px 0px 0px 0px;">SignOUt</button>
+
+
+              </div>
+
+
+            </div>
+
+            <form id="signout">
+
+
+            </form>
+    
+
+        </div>
+    </div>
+    
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script>
+        /*varribales to send to the next page*/$
+
+        var name = $("#inputEmail").val();
+        var password = $("#inputPassword").val();
+
+
+
+
+        $( "#lgtbtn" ).click(function() {
+
+          $('#signout').attr('action', 'index.html'); $( "#signout" ).submit();
+
+        });
+
+
+
+
+
+    </script>
+
+
+
+
+  </body>
+</html>
